@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/ros2_ws/src/build/cpp_pubsub/talker" "/ros2_ws/src/build/cpp_pubsub/listener" "/ros2_ws/src/build/cpp_pubsub/topics_practice" "/ros2_ws/src/build/cpp_pubsub/topics_practice_b" "TARGETS" "talker" "listener" "topics_practice" "topics_practice_b" "DESTINATION" "lib/cpp_pubsub")
