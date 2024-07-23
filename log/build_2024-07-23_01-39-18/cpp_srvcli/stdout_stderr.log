@@ -1,0 +1,11 @@
+[35m[1mConsolidate compiler generated dependencies of target service_practice[0m
+[ 66%] Built target add_two_ints_server
+[ 66%] Built target add_two_ints_client
+[ 83%] [32mBuilding CXX object CMakeFiles/service_practice.dir/src/service_practice.cpp.o[0m
+[01m[K/ros2_ws/src/cpp_srvcli/src/service_practice.cpp:[m[K In member function ‘[01m[Kvoid TurtleServicePractice::change_color(uint8_t, uint8_t, uint8_t)[m[K’:
+[01m[K/ros2_ws/src/cpp_srvcli/src/service_practice.cpp:53:18:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Krclcpp::Client<turtlesim::srv::SetPen>::FutureAndRequestId[m[K’
+   53 |     future_result[01;31m[K->[m[Kthen([this](const rclcpp::Client<turtlesim::srv::SetPen>::SharedFuture future) {
+      |                  [01;31m[K^~[m[K
+gmake[2]: *** [CMakeFiles/service_practice.dir/build.make:76: CMakeFiles/service_practice.dir/src/service_practice.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/service_practice.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

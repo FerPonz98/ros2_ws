@@ -1,0 +1,39 @@
+[0.091s] Invoking command in '/ros2_ws/build/cpp_pubsub': AMENT_PREFIX_PATH=/ros2_ws/install/turtlesim:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ros2_ws/install/turtlesim:/opt/ros/humble LD_LIBRARY_PATH=/ros2_ws/install/turtlesim/lib:${LD_LIBRARY_PATH} PYTHONPATH=/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /ros2_ws/build/cpp_pubsub -- -j16 -l16
+[0.403s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.947s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[1.023s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.028s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.040s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.064s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.090s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.177s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.187s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.779s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.949s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[2.021s] -- Found turtlesim: 1.4.2 (/ros2_ws/install/turtlesim/share/turtlesim/cmake)
+[2.562s] -- Found std_srvs: 4.2.4 (/opt/ros/humble/share/std_srvs/cmake)
+[2.587s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.253s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.254s] -- Configured cppcheck include dirs: 
+[3.254s] -- Configured cppcheck exclude dirs and/or files: 
+[3.367s] -- Added test 'lint_cmake' to check CMake code style
+[3.682s] -- Added test 'uncrustify' to check C / C++ code style
+[3.683s] -- Configured uncrustify additional arguments: 
+[3.717s] -- Added test 'xmllint' to check XML markup files
+[3.764s] -- Configuring done
+[3.889s] [31mCMake Error at CMakeLists.txt:17 (add_executable):
+[3.890s]   Cannot find source file:
+[3.891s] 
+[3.891s]     src/listeners.cpp
+[3.892s] 
+[3.893s]   Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h
+[3.893s]   .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc
+[3.894s] 
+[3.894s] [0m
+[3.896s] [31mCMake Error at CMakeLists.txt:17 (add_executable):
+[3.897s]   No SOURCES given to target: listener
+[3.898s] 
+[3.898s] [0m
+[3.899s] [0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m
+[3.901s] gmake: *** [Makefile:390: cmake_check_build_system] Error 1
+[3.903s] Invoked command in '/ros2_ws/build/cpp_pubsub' returned '2': AMENT_PREFIX_PATH=/ros2_ws/install/turtlesim:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ros2_ws/install/turtlesim:/opt/ros/humble LD_LIBRARY_PATH=/ros2_ws/install/turtlesim/lib:${LD_LIBRARY_PATH} PYTHONPATH=/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /ros2_ws/build/cpp_pubsub -- -j16 -l16

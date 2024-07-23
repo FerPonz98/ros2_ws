@@ -1,0 +1,39 @@
+[0.168s] Invoking command in '/ros2_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=/ros2_ws/install/turtlesim:/ros2_ws/install/cpp_pubsub:/ros2_ws/install/my_package_cpp:/ros2_ws/install/py_pubsub:/ros2_ws/install/my_package:/opt/ros/humble /usr/bin/cmake --build /ros2_ws/build/cpp_pubsub -- -j16 -l16
+[0.417s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.437s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[1.542s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.547s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.559s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.587s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.618s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.721s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.735s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.772s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.939s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[3.006s] -- Found turtlesim: 1.4.2 (/ros2_ws/install/turtlesim/share/turtlesim/cmake)
+[3.494s] -- Found std_srvs: 4.2.4 (/opt/ros/humble/share/std_srvs/cmake)
+[3.519s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.410s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.411s] -- Configured cppcheck include dirs: 
+[4.411s] -- Configured cppcheck exclude dirs and/or files: 
+[4.510s] -- Added test 'lint_cmake' to check CMake code style
+[4.803s] -- Added test 'uncrustify' to check C / C++ code style
+[4.803s] -- Configured uncrustify additional arguments: 
+[4.838s] -- Added test 'xmllint' to check XML markup files
+[4.885s] -- Configuring done
+[5.011s] [31mCMake Error at CMakeLists.txt:17 (add_executable):
+[5.011s]   Cannot find source file:
+[5.012s] 
+[5.013s]     src/subscriber_member_function.cpp
+[5.013s] 
+[5.014s]   Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h
+[5.014s]   .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc
+[5.015s] 
+[5.015s] [0m
+[5.018s] [31mCMake Error at CMakeLists.txt:17 (add_executable):
+[5.018s]   No SOURCES given to target: listener
+[5.019s] 
+[5.020s] [0m
+[5.020s] [0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m
+[5.023s] gmake: *** [Makefile:267: cmake_check_build_system] Error 1
+[5.025s] Invoked command in '/ros2_ws/build/cpp_pubsub' returned '2': CMAKE_PREFIX_PATH=/ros2_ws/install/turtlesim:/ros2_ws/install/cpp_pubsub:/ros2_ws/install/my_package_cpp:/ros2_ws/install/py_pubsub:/ros2_ws/install/my_package:/opt/ros/humble /usr/bin/cmake --build /ros2_ws/build/cpp_pubsub -- -j16 -l16

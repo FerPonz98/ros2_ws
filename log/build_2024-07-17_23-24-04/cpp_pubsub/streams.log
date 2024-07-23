@@ -1,0 +1,15 @@
+[0.183s] Invoking command in '/ros2_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=/ros2_ws/install/turtlesim:/ros2_ws/install/cpp_pubsub:/ros2_ws/install/my_package_cpp:/ros2_ws/install/py_pubsub:/ros2_ws/install/my_package:/opt/ros/humble /usr/bin/cmake --build /ros2_ws/build/cpp_pubsub -- -j16 -l16
+[0.611s] [35m[1mConsolidate compiler generated dependencies of target listener[0m
+[0.612s] [35m[1mConsolidate compiler generated dependencies of target topics_practice[0m
+[0.630s] [35m[1mConsolidate compiler generated dependencies of target topics_practice_b[0m
+[0.756s] [ 12%] [32m[1mLinking CXX executable topics_practice[0m
+[0.787s] [ 37%] Built target talker
+[1.030s] [ 62%] Built target listener
+[1.045s] [ 87%] Built target topics_practice_b
+[1.188s] /usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+[1.189s] (.text+0x1b): undefined reference to `main'
+[1.200s] collect2: error: ld returned 1 exit status
+[1.201s] gmake[2]: *** [CMakeFiles/topics_practice.dir/build.make:199: topics_practice] Error 1
+[1.202s] gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/topics_practice.dir/all] Error 2
+[1.202s] gmake: *** [Makefile:146: all] Error 2
+[1.203s] Invoked command in '/ros2_ws/build/cpp_pubsub' returned '2': CMAKE_PREFIX_PATH=/ros2_ws/install/turtlesim:/ros2_ws/install/cpp_pubsub:/ros2_ws/install/my_package_cpp:/ros2_ws/install/py_pubsub:/ros2_ws/install/my_package:/opt/ros/humble /usr/bin/cmake --build /ros2_ws/build/cpp_pubsub -- -j16 -l16

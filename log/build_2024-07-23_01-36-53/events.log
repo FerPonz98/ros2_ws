@@ -1,0 +1,85 @@
+[0.000000] (-) TimerEvent: {}
+[0.000377] (-) JobUnselected: {'identifier': 'cpp_pubsub'}
+[0.000565] (-) JobUnselected: {'identifier': 'my_package'}
+[0.000732] (-) JobUnselected: {'identifier': 'my_package_cpp'}
+[0.000893] (-) JobUnselected: {'identifier': 'py_pubsub'}
+[0.001077] (-) JobUnselected: {'identifier': 'py_srvcli'}
+[0.001238] (-) JobUnselected: {'identifier': 'turtlesim'}
+[0.001395] (cpp_srvcli) JobQueued: {'identifier': 'cpp_srvcli', 'dependencies': OrderedDict()}
+[0.001592] (cpp_srvcli) JobStarted: {'identifier': 'cpp_srvcli'}
+[0.098809] (-) TimerEvent: {}
+[0.158589] (cpp_srvcli) JobProgress: {'identifier': 'cpp_srvcli', 'progress': 'cmake'}
+[0.171875] (cpp_srvcli) JobProgress: {'identifier': 'cpp_srvcli', 'progress': 'build'}
+[0.175499] (cpp_srvcli) Command: {'cmd': ['/usr/bin/cmake', '--build', '/ros2_ws/build/cpp_srvcli', '--', '-j16', '-l16'], 'cwd': '/ros2_ws/build/cpp_srvcli', 'env': OrderedDict([('HOSTNAME', '012275bc5359'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/ros2_ws/install/turtlesim/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'host.docker.internal:0.0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/ros2_ws/install/py_srvcli:/ros2_ws/install/cpp_pubsub:/ros2_ws/install/turtlesim:/ros2_ws/install/py_pubsub:/ros2_ws/install/my_package_cpp:/ros2_ws/install/my_package:/ros2_ws/install/cpp_srvcli:/opt/ros/humble'), ('PWD', '/ros2_ws/build/cpp_srvcli'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/ros2_ws/install/py_srvcli/lib/python3.10/site-packages:/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages:/ros2_ws/install/py_pubsub/lib/python3.10/site-packages:/ros2_ws/install/my_package/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/ros2_ws/install/cpp_pubsub:/ros2_ws/install/turtlesim:/ros2_ws/install/my_package_cpp:/ros2_ws/install/cpp_srvcli:/ros2_ws/install/py_srvcli:/ros2_ws/install/py_pubsub:/ros2_ws/install/my_package:/opt/ros/humble')]), 'shell': False}
+[0.199977] (-) TimerEvent: {}
+[0.301516] (-) TimerEvent: {}
+[0.401923] (-) TimerEvent: {}
+[0.502371] (-) TimerEvent: {}
+[0.602861] (-) TimerEvent: {}
+[0.629299] (cpp_srvcli) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target service_practice\x1b[0m\n'}
+[0.682698] (cpp_srvcli) StdoutLine: {'line': b'[ 33%] Built target add_two_ints_client\n'}
+[0.689189] (cpp_srvcli) StdoutLine: {'line': b'[ 66%] Built target add_two_ints_server\n'}
+[0.702939] (-) TimerEvent: {}
+[0.803313] (-) TimerEvent: {}
+[0.903740] (-) TimerEvent: {}
+[1.004225] (-) TimerEvent: {}
+[1.037741] (cpp_srvcli) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/service_practice.dir/src/service_practice.cpp.o\x1b[0m\n'}
+[1.104354] (-) TimerEvent: {}
+[1.204896] (-) TimerEvent: {}
+[1.305563] (-) TimerEvent: {}
+[1.406124] (-) TimerEvent: {}
+[1.506875] (-) TimerEvent: {}
+[1.607586] (-) TimerEvent: {}
+[1.708290] (-) TimerEvent: {}
+[1.808913] (-) TimerEvent: {}
+[1.909667] (-) TimerEvent: {}
+[2.010406] (-) TimerEvent: {}
+[2.111122] (-) TimerEvent: {}
+[2.211849] (-) TimerEvent: {}
+[2.312599] (-) TimerEvent: {}
+[2.413279] (-) TimerEvent: {}
+[2.514051] (-) TimerEvent: {}
+[2.614805] (-) TimerEvent: {}
+[2.715555] (-) TimerEvent: {}
+[2.816242] (-) TimerEvent: {}
+[2.917002] (-) TimerEvent: {}
+[2.927831] (cpp_srvcli) StderrLine: {'line': b'\x1b[01m\x1b[K/ros2_ws/src/cpp_srvcli/src/service_practice.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid TurtleServicePractice::change_color(uint8_t, uint8_t, uint8_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.928763] (cpp_srvcli) StderrLine: {'line': b'\x1b[01m\x1b[K/ros2_ws/src/cpp_srvcli/src/service_practice.cpp:53:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 has non-pointer type \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Client<turtlesim::srv::SetPen>::FutureAndRequestId\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.929474] (cpp_srvcli) StderrLine: {'line': b'   53 |     future_result\x1b[01;31m\x1b[K->\x1b[m\x1b[Kthen([this](const rclcpp::Client<turtlesim::srv::SetPen>::SharedFuture future) {\n'}
+[2.930021] (cpp_srvcli) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.017124] (-) TimerEvent: {}
+[3.117822] (-) TimerEvent: {}
+[3.218494] (-) TimerEvent: {}
+[3.319220] (-) TimerEvent: {}
+[3.419920] (-) TimerEvent: {}
+[3.520669] (-) TimerEvent: {}
+[3.621439] (-) TimerEvent: {}
+[3.722223] (-) TimerEvent: {}
+[3.822951] (-) TimerEvent: {}
+[3.923676] (-) TimerEvent: {}
+[4.024397] (-) TimerEvent: {}
+[4.125148] (-) TimerEvent: {}
+[4.225872] (-) TimerEvent: {}
+[4.326594] (-) TimerEvent: {}
+[4.427343] (-) TimerEvent: {}
+[4.528074] (-) TimerEvent: {}
+[4.628767] (-) TimerEvent: {}
+[4.729481] (-) TimerEvent: {}
+[4.830172] (-) TimerEvent: {}
+[4.930911] (-) TimerEvent: {}
+[4.978532] (cpp_srvcli) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/service_practice.dir/build.make:76: CMakeFiles/service_practice.dir/src/service_practice.cpp.o] Error 1\n'}
+[4.981522] (cpp_srvcli) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/service_practice.dir/all] Error 2\n'}
+[4.982125] (cpp_srvcli) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[4.983508] (cpp_srvcli) CommandEnded: {'returncode': 2}
+[5.031024] (-) TimerEvent: {}
+[5.131537] (-) TimerEvent: {}
+[5.231979] (-) TimerEvent: {}
+[5.332510] (-) TimerEvent: {}
+[5.433003] (-) TimerEvent: {}
+[5.533607] (-) TimerEvent: {}
+[5.634529] (-) TimerEvent: {}
+[5.735148] (-) TimerEvent: {}
+[5.835586] (-) TimerEvent: {}
+[5.931196] (cpp_srvcli) JobEnded: {'identifier': 'cpp_srvcli', 'rc': 2}
+[5.937962] (-) TimerEvent: {}
+[5.942538] (-) EventReactorShutdown: {}

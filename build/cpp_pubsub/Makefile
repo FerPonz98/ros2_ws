@@ -198,6 +198,19 @@ cpp_pubsub_uninstall/fast:
 .PHONY : cpp_pubsub_uninstall/fast
 
 #=============================================================================
+# Target rules for targets named listener
+
+# Build rule for target.
+listener: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 listener
+.PHONY : listener
+
+# fast build rule for target.
+listener/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/listener.dir/build.make CMakeFiles/listener.dir/build
+.PHONY : listener/fast
+
+#=============================================================================
 # Target rules for targets named talker
 
 # Build rule for target.
@@ -209,6 +222,56 @@ talker: cmake_check_build_system
 talker/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker.dir/build.make CMakeFiles/talker.dir/build
 .PHONY : talker/fast
+
+#=============================================================================
+# Target rules for targets named topics_practice
+
+# Build rule for target.
+topics_practice: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 topics_practice
+.PHONY : topics_practice
+
+# fast build rule for target.
+topics_practice/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/topics_practice.dir/build.make CMakeFiles/topics_practice.dir/build
+.PHONY : topics_practice/fast
+
+#=============================================================================
+# Target rules for targets named topics_practice_b
+
+# Build rule for target.
+topics_practice_b: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 topics_practice_b
+.PHONY : topics_practice_b
+
+# fast build rule for target.
+topics_practice_b/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/topics_practice_b.dir/build.make CMakeFiles/topics_practice_b.dir/build
+.PHONY : topics_practice_b/fast
+
+src/listener.o: src/listener.cpp.o
+.PHONY : src/listener.o
+
+# target to build an object file
+src/listener.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/listener.dir/build.make CMakeFiles/listener.dir/src/listener.cpp.o
+.PHONY : src/listener.cpp.o
+
+src/listener.i: src/listener.cpp.i
+.PHONY : src/listener.i
+
+# target to preprocess a source file
+src/listener.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/listener.dir/build.make CMakeFiles/listener.dir/src/listener.cpp.i
+.PHONY : src/listener.cpp.i
+
+src/listener.s: src/listener.cpp.s
+.PHONY : src/listener.s
+
+# target to generate assembly for a file
+src/listener.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/listener.dir/build.make CMakeFiles/listener.dir/src/listener.cpp.s
+.PHONY : src/listener.cpp.s
 
 src/publisher_script.o: src/publisher_script.cpp.o
 .PHONY : src/publisher_script.o
@@ -234,6 +297,54 @@ src/publisher_script.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker.dir/build.make CMakeFiles/talker.dir/src/publisher_script.cpp.s
 .PHONY : src/publisher_script.cpp.s
 
+src/topics_practice.o: src/topics_practice.cpp.o
+.PHONY : src/topics_practice.o
+
+# target to build an object file
+src/topics_practice.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/topics_practice.dir/build.make CMakeFiles/topics_practice.dir/src/topics_practice.cpp.o
+.PHONY : src/topics_practice.cpp.o
+
+src/topics_practice.i: src/topics_practice.cpp.i
+.PHONY : src/topics_practice.i
+
+# target to preprocess a source file
+src/topics_practice.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/topics_practice.dir/build.make CMakeFiles/topics_practice.dir/src/topics_practice.cpp.i
+.PHONY : src/topics_practice.cpp.i
+
+src/topics_practice.s: src/topics_practice.cpp.s
+.PHONY : src/topics_practice.s
+
+# target to generate assembly for a file
+src/topics_practice.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/topics_practice.dir/build.make CMakeFiles/topics_practice.dir/src/topics_practice.cpp.s
+.PHONY : src/topics_practice.cpp.s
+
+src/topics_practice_b.o: src/topics_practice_b.cpp.o
+.PHONY : src/topics_practice_b.o
+
+# target to build an object file
+src/topics_practice_b.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/topics_practice_b.dir/build.make CMakeFiles/topics_practice_b.dir/src/topics_practice_b.cpp.o
+.PHONY : src/topics_practice_b.cpp.o
+
+src/topics_practice_b.i: src/topics_practice_b.cpp.i
+.PHONY : src/topics_practice_b.i
+
+# target to preprocess a source file
+src/topics_practice_b.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/topics_practice_b.dir/build.make CMakeFiles/topics_practice_b.dir/src/topics_practice_b.cpp.i
+.PHONY : src/topics_practice_b.cpp.i
+
+src/topics_practice_b.s: src/topics_practice_b.cpp.s
+.PHONY : src/topics_practice_b.s
+
+# target to generate assembly for a file
+src/topics_practice_b.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/topics_practice_b.dir/build.make CMakeFiles/topics_practice_b.dir/src/topics_practice_b.cpp.s
+.PHONY : src/topics_practice_b.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -249,10 +360,22 @@ help:
 	@echo "... test"
 	@echo "... cpp_pubsub_uninstall"
 	@echo "... uninstall"
+	@echo "... listener"
 	@echo "... talker"
+	@echo "... topics_practice"
+	@echo "... topics_practice_b"
+	@echo "... src/listener.o"
+	@echo "... src/listener.i"
+	@echo "... src/listener.s"
 	@echo "... src/publisher_script.o"
 	@echo "... src/publisher_script.i"
 	@echo "... src/publisher_script.s"
+	@echo "... src/topics_practice.o"
+	@echo "... src/topics_practice.i"
+	@echo "... src/topics_practice.s"
+	@echo "... src/topics_practice_b.o"
+	@echo "... src/topics_practice_b.i"
+	@echo "... src/topics_practice_b.s"
 .PHONY : help
 
 

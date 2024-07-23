@@ -1,0 +1,38 @@
+-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found example_interfaces: 0.9.3 (/opt/ros/humble/share/example_interfaces/cmake)
+-- Found turtlesim: 1.4.2 (/opt/ros/humble/share/turtlesim/cmake)
+-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: 
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /ros2_ws/build/cpp_srvcli
+[35m[1mConsolidate compiler generated dependencies of target add_two_ints_server[0m
+[35m[1mConsolidate compiler generated dependencies of target add_two_ints_client[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/service_practice.dir/src/service_practice.cpp.o[0m
+[ 83%] Built target add_two_ints_client
+[ 83%] Built target add_two_ints_server
+[01m[K/ros2_ws/src/cpp_srvcli/src/service_practice.cpp:[m[K In member function ‘[01m[Kvoid TurtleServicePractice::change_color(uint8_t, uint8_t, uint8_t)[m[K’:
+[01m[K/ros2_ws/src/cpp_srvcli/src/service_practice.cpp:53:11:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Krclcpp::Client<turtlesim::srv::SetPen>::FutureAndRequestId[m[K’
+   53 |     result[01;31m[K->[m[Kwait_for(std::chrono::seconds(1));
+      |           [01;31m[K^~[m[K
+[01m[K/ros2_ws/src/cpp_srvcli/src/service_practice.cpp:54:15:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Krclcpp::Client<turtlesim::srv::SetPen>::FutureAndRequestId[m[K’
+   54 |     if (result[01;31m[K->[m[Kvalid())
+      |               [01;31m[K^~[m[K
+gmake[2]: *** [CMakeFiles/service_practice.dir/build.make:76: CMakeFiles/service_practice.dir/src/service_practice.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/service_practice.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,12 @@
+[35m[1mConsolidate compiler generated dependencies of target topics_practice_b[0m
+[ 25%] Built target talker
+[ 37%] [32mBuilding CXX object CMakeFiles/topics_practice.dir/src/topics_practice.cpp.o[0m
+[ 62%] Built target listener
+[ 87%] Built target topics_practice_b
+[01m[K/ros2_ws/src/cpp_pubsub/src/topics_practice.cpp:[m[K In member function ‘[01m[Kvoid MotionController::teleport_turtle(double, double, double)[m[K’:
+[01m[K/ros2_ws/src/cpp_pubsub/src/topics_practice.cpp:55:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct turtlesim::srv::TeleportAbsolute_Response_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct turtlesim::srv::TeleportAbsolute_Response_<std::allocator<void> >[m[K’} has no member named ‘[01m[Ksuccess[m[K’
+   55 |         if (result.get()->[01;31m[Ksuccess[m[K != 1)
+      |                           [01;31m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/topics_practice.dir/build.make:76: CMakeFiles/topics_practice.dir/src/topics_practice.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/topics_practice.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

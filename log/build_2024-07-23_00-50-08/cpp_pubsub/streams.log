@@ -1,0 +1,58 @@
+[0.079s] Invoking command in '/ros2_ws/build/cpp_pubsub': AMENT_PREFIX_PATH=/ros2_ws/install/turtlesim:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ros2_ws/install/turtlesim:/opt/ros/humble LD_LIBRARY_PATH=/ros2_ws/install/turtlesim/lib:${LD_LIBRARY_PATH} PYTHONPATH=/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /ros2_ws/src/cpp_pubsub -DCMAKE_INSTALL_PREFIX=/ros2_ws/install/cpp_pubsub
+[0.539s] -- The C compiler identification is GNU 11.4.0
+[0.824s] -- The CXX compiler identification is GNU 11.4.0
+[0.885s] -- Detecting C compiler ABI info
+[1.695s] -- Detecting C compiler ABI info - done
+[1.714s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.715s] -- Detecting C compile features
+[1.716s] -- Detecting C compile features - done
+[1.756s] -- Detecting CXX compiler ABI info
+[2.584s] -- Detecting CXX compiler ABI info - done
+[2.602s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.603s] -- Detecting CXX compile features
+[2.604s] -- Detecting CXX compile features - done
+[2.677s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.505s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[4.379s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[4.828s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[4.906s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[4.985s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[5.074s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.205s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.664s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[5.707s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[6.629s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[6.788s] -- Found FastRTPS: /opt/ros/humble/include  
+[7.046s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[7.195s] -- Looking for pthread.h
+[8.044s] -- Looking for pthread.h - found
+[8.051s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[8.857s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[8.860s] -- Found Threads: TRUE  
+[9.182s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[9.290s] -- Found turtlesim: 1.4.2 (/ros2_ws/install/turtlesim/share/turtlesim/cmake)
+[9.893s] -- Found std_srvs: 4.2.4 (/opt/ros/humble/share/std_srvs/cmake)
+[9.946s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[10.879s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[10.880s] -- Configured cppcheck include dirs: 
+[10.881s] -- Configured cppcheck exclude dirs and/or files: 
+[10.988s] -- Added test 'lint_cmake' to check CMake code style
+[11.292s] -- Added test 'uncrustify' to check C / C++ code style
+[11.293s] -- Configured uncrustify additional arguments: 
+[11.334s] -- Added test 'xmllint' to check XML markup files
+[11.429s] -- Configuring done
+[11.555s] [31mCMake Error at CMakeLists.txt:17 (add_executable):
+[11.556s]   Cannot find source file:
+[11.557s] 
+[11.557s]     src/listeners.cpp
+[11.558s] 
+[11.558s]   Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h
+[11.559s]   .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc
+[11.560s] 
+[11.560s] [0m
+[11.562s] [31mCMake Error at CMakeLists.txt:17 (add_executable):
+[11.563s]   No SOURCES given to target: listener
+[11.563s] 
+[11.564s] [0m
+[11.564s] [0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m
+[11.570s] Invoked command in '/ros2_ws/build/cpp_pubsub' returned '1': AMENT_PREFIX_PATH=/ros2_ws/install/turtlesim:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ros2_ws/install/turtlesim:/opt/ros/humble LD_LIBRARY_PATH=/ros2_ws/install/turtlesim/lib:${LD_LIBRARY_PATH} PYTHONPATH=/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /ros2_ws/src/cpp_pubsub -DCMAKE_INSTALL_PREFIX=/ros2_ws/install/cpp_pubsub
